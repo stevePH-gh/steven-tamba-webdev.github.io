@@ -89,15 +89,16 @@ body {
     height: 100%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    transition: background-color 0.3s ease, color 0.5s ease;
+    transition: color 0.5s ease-in;
 }
     .body-light-mode {
-        background: linear-gradient(45deg, rgb(255, 255, 255), rgb(154, 154, 154) );
+        background: linear-gradient(45deg, rgb(255, 255, 255), rgb(173, 173, 173) );
         color: black;
-        transition: text-shadow 0.4s ease-in-out, transform 0.4s ease-in-out, color 0.7s ease;
+        transition: color 0.5s ease;
         animation: liquid-gradient 10s ease infinite, scroll-anim 0.5s ease-out;
         background-attachment: fixed;
         background-size: 600% 600%;
+        height: 100%;
     }
 
 .introduction-panel {
@@ -109,10 +110,12 @@ body {
     padding: 20px;
     border-radius: 10px;
     justify-content: space-between;
+        transition: color 0.5s ease;
 }
     .introduction-panel-light {
         background: rgba(116, 116, 116, 0.449);
         color: black;
+        transition: color 0.5s ease;
     }
 
 .introduction-message-container {
@@ -323,10 +326,13 @@ body {
 
 
 
-footer {
+.footer {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.674), transparent);
     padding: 10px;
 }
+    .footer-light {
+        color: black;
+    }
 
 .footer-container {
     display: flex;
