@@ -17,6 +17,32 @@ header {
     justify-content: center;
 }
 
+.btnToggle {
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1px;
+    color: black;
+    font-weight: bold;
+    border-style: none;
+    transition: transform 0.2s ease-in-out;
+}
+    .btnToggle:hover {
+        transform: scale(1.1);
+        font-weight: bold;
+        color: white;
+        background-color: black;
+    }
+
+    .btnToggle-light {
+        background-color: black;
+        color: white;
+    }
+        .btnToggle-light:hover {
+            color: black;
+            background-color: white;
+        }
+
 .navHdr {
     display: flex;
     justify-content: center;
@@ -24,6 +50,7 @@ header {
     background-color: rgba(255, 255, 255, 0.081);
     border-radius: 10px;
     margin-bottom: 10px;
+    transition: background-color 0.3s ease;
 }
     .navHdr a {
         padding: 5;
@@ -36,10 +63,14 @@ header {
         border-radius: 5px;
     }
         .navHdr a:hover {
-            color: rgb(255, 255, 255);
             letter-spacing: 2px;
             background-color: #0e345d;
         }
+
+    .navHdr-light {
+        background-color: rgba(0, 0, 0, 0.599);
+        transition: background-color 0.5s ease;
+    }
 
 .navFtr a {
     text-decoration: none;
@@ -58,18 +89,31 @@ body {
     height: 100%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease, color 0.5s ease;
 }
+    .body-light-mode {
+        background: linear-gradient(45deg, rgb(255, 255, 255), rgb(154, 154, 154) );
+        color: black;
+        transition: text-shadow 0.4s ease-in-out, transform 0.4s ease-in-out, color 0.7s ease;
+        animation: liquid-gradient 10s ease infinite, scroll-anim 0.5s ease-out;
+        background-attachment: fixed;
+        background-size: 600% 600%;
+    }
 
 .introduction-panel {
     display: flex;
-    /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.449), rgba(0, 0, 0, 0.86) 80% ), url("../assets/images/bg/bg_htm.png"); */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.396) 300px, transparent);
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.449), rgba(0, 0, 0, 0.86) 80% ), url("../assets/images/bg/bg_htm.png");
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.396) 300px, transparent); */
     background-size: 100%;
     background-position: 0% 70%;
     padding: 20px;
     border-radius: 10px;
     justify-content: space-between;
 }
+    .introduction-panel-light {
+        background: rgba(116, 116, 116, 0.449);
+        color: black;
+    }
 
 .introduction-message-container {
     width: 50%;
@@ -197,7 +241,7 @@ body {
     margin-top: 0;
     letter-spacing: 6px;
     color: white;
-    transition: text-shadow 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transition: text-shadow 0.4s ease-in-out, transform 0.4s ease-in-out, color 0.7s ease;
 
     /* background: linear-gradient(to right, #60df20 20%, #1962af);
     background-color: white;
@@ -212,6 +256,10 @@ body {
         text-shadow: 
             0 0 20px #fff;
         transform: scale(1.01);
+    }
+    .title-sections-light {
+        color: black;
+        transition: text-shadow 0.4s ease-in-out, transform 0.4s ease-in-out, color 0.7s ease;
     }
 
 .projP {
@@ -316,6 +364,10 @@ footer {
     .contact-glow {
         box-shadow: 0 0 20px #ffffff;
     }
+    .contact-light a {
+        text-decoration: none;
+        color: lime;
+    }
 
 .footer-copy {
     text-align: center;
@@ -418,6 +470,10 @@ footer {
             text-align: center;
             margin: 0;
         }
+    .btnToggle {
+        width: 30%;
+        justify-self: center;
+    }
 
     .introduction-panel {
         display: block;
