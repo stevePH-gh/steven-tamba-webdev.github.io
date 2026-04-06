@@ -30,6 +30,7 @@ function toggleDarkMode() {
   var intPanel = document.getElementById("introduction-panel")
   var sections = document.getElementsByClassName("title-sections")
   var header = document.getElementById("home")
+  var ftr = document.getElementById("footer")
 
   var btn = document.getElementById("toggleButton")
 
@@ -37,6 +38,7 @@ function toggleDarkMode() {
   intPanel.classList.toggle("introduction-panel-light");
   header.classList.toggle("navHdr-light")
   btn.classList.toggle("btnToggle-light")
+  ftr.classList.toggle("footer-light")
 
   for (i = 0; i < sections.length; i++) {
     sections[i].classList.toggle("title-sections-light");
