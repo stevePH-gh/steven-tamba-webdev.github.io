@@ -533,6 +533,13 @@ body {
     .footer-container {
         display: grid;
     }
+    
+    .proj-row p {
+        font-size: 18px;
+    }
+    .proj-row b {
+        font-size: 20px;
+    }
 }
 
 /* FOR SCROLL ANIMATION */
