@@ -103,8 +103,8 @@ body {
 
 .introduction-panel {
     display: flex;
-    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.449), rgba(0, 0, 0, 0.86) 80% ), url("../assets/images/bg/bg_htm.png");
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.396) 300px, transparent); */
+    /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.449), rgba(0, 0, 0, 0.86) 80% ), url("../assets/images/bg/bg_htm.png");*/
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.396) 300px, transparent);
     background-size: 100%;
     background-position: 0% 70%;
     padding: 20px;
