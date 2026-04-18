@@ -1,3 +1,12 @@
+function highlightAbout() {
+    const header3 = document.getElementById('secAbt')
+    header3.classList.toggle('title-sections-highlight')
+
+    setTimeout(() => {
+    header3.classList.remove('title-sections-highlight');
+  }, 1500);
+}
+
 function highlightEduc() {
     const header3 = document.getElementById('secEduc')
     header3.classList.toggle('title-sections-highlight')
@@ -28,10 +37,11 @@ function highlightContact() {
 function toggleDarkMode() {
   var body = document.body
   var intPanel = document.getElementById("introduction-panel")
-  var sections = document.getElementsByClassName("title-sections")
   var header = document.getElementById("home")
   var ftr = document.getElementById("footer")
-
+  
+  var sections = document.getElementsByClassName("title-sections")
+  var projTxt = document.getElementsByClassName("proj-row-caption")
   var btn = document.getElementById("toggleButton")
 
   body.classList.toggle("body-light-mode");
@@ -44,6 +54,11 @@ function toggleDarkMode() {
     sections[i].classList.toggle("title-sections-light");
   }
 
+  for (p = 0; p < projTxt.length; p++) {
+    projTxt[p].classList.toggle("proj-row-caption-light");
+  }
+
+  // BUTTON DARK/LIGHT MODE
   if (btn.innerHTML === "Light") {
     btn.innerHTML = "Dark"
   } else {

@@ -80,6 +80,10 @@ header {
         text-decoration: underline;
     }
 
+#html-lang {
+    background: url("../assets/images/languages/ic_html_new-wh.png");
+}
+
 body {
     background: linear-gradient(45deg, rgb(29, 23, 51), rgb(6, 31, 6) );
     animation: liquid-gradient 10s ease infinite, scroll-anim 0.5s ease-out;
@@ -92,7 +96,7 @@ body {
     transition: color 0.5s ease-in;
 }
     .body-light-mode {
-        background: linear-gradient(45deg, rgb(255, 255, 255), rgb(173, 173, 173) );
+        background: linear-gradient(45deg, rgb(225, 225, 225), rgb(175, 175, 175) );
         color: black;
         transition: color 0.5s ease;
         animation: liquid-gradient 10s ease infinite, scroll-anim 0.5s ease-out;
@@ -235,7 +239,7 @@ body {
 }
 
     .educ_sti img {
-        border-radius: 10%;
+        border-radius: 8%;
     }
 
 .title-sections {
@@ -306,14 +310,16 @@ body {
     justify-content: center;
     gap: 5%;
 }
-
+    .project-list a {
+        text-decoration: none;
+    }
+    
 .proj-row {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
     justify-content: center;
     transition: transform 0.3s ease, background-color 0.5s ease;
-    text-decoration: none;
 }
     .proj-row:hover {
         background-color: rgba(60, 70, 146, 0.419);
@@ -323,7 +329,12 @@ body {
     .proj-row img {
         width: 100px;
     }
-
+    .proj-row-caption {
+        color: white;
+    }
+    .proj-row-caption-light {
+        color: black;
+    }
 
 
 .footer {
@@ -331,6 +342,7 @@ body {
     padding: 10px;
 }
     .footer-light {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.896), transparent);
         color: black;
     }
 
@@ -375,6 +387,24 @@ body {
         color: lime;
     }
 
+.socials a{
+    text-decoration: none;
+}
+
+.dragon-balls {
+    width: 40px;
+    padding: 5px;
+    transition: filter 0.1s ease-in-out;
+}
+    .dragon-balls:hover {
+        filter: brightness(50%);
+    }
+
+.dragon-balls-light {
+    filter: brightness(0%);
+}
+
+
 .footer-copy {
     text-align: center;
     color: rgba(255, 255, 255, 0.449);
@@ -386,7 +416,9 @@ body {
 }
 
 /*  =====================================================
-    =========================== SEPARATE PAGES ==========   */
+    =========================== SEPARATE PAGES ==========
+    =====================================================
+*/
 
 /* CONTACT */
 .navHdr-contact {

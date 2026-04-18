@@ -12,10 +12,9 @@
     <header>
         <nav class="navHdr" id="home">
             <a href="#">Home</a>
-            <a href="https://www.linkedin.com/in/steven-tamba-web-dev/" target="_blank">LinkedIn</a>
+            <a href="#secAbt" onclick="highlightAbout()">About</a>
             <a href="#secAbt" onclick="highlightEduc()">Education</a>
             <a href="#footer-contact" target="_parent" onclick="highlightContact()">Contact</a>
-            <a href="https://github.com/stevePH-gh" target="_blanks">Github</a>
             <button onclick="toggleDarkMode()" class="btnToggle" id="toggleButton">Light</button>
         </nav>
     </header>
@@ -84,22 +83,22 @@
             <h3 class="title-sections">LANGUAGES</h3>
             <div class="language-list" id="secLang">
                 <div class="ll-row">
-                    <img src="assets/images//languages/lang_htm.png" alt="pic_html"><br>
+                    <img id="html-pic" src="assets/images//languages/ic_html_new.png" alt="pic_html"><br>
                     <br>
                     <b>HTML</b>
                 </div>
                 <div class="ll-row">
-                    <img class="spc" src="assets/images/languages/lang_css.png" alt="pic_css"><br>
+                    <img class="spc" src="assets/images/languages/ic_css_new.png" alt="pic_css"><br>
                     <br>
                     <b>CSS</b>
                 </div>
                 <div class="ll-row">
-                    <img src="assets/images/languages/lang_js.png" alt="pic_js"><br>
+                    <img src="assets/images/languages/ic_js_new.png" alt="pic_js"><br>
                     <br>
                     <b>JavaScript</b>
                 </div>
                 <div class="ll-row">
-                    <img src="assets/images/languages/lang_cs.png" alt="pic_cs"><br>
+                    <img src="assets/images/languages/ic_cs_new.png" alt="pic_cs"><br>
                     <br>
                     <b>C#</b>
                 </div>
@@ -109,38 +108,40 @@
         <div class="addRow"><br>
             <h3 class="title-sections" id="secProj">SAMPLE PROJECTS</h3>
             <div class="project-list">
-                <div class="proj-row">
-                    <a href="https://github.com/stevePH-gh/STI-Alaminos-Class-Scheduling-System" target="_blank">
-                    <img src="assets/images/projects/proj_sched.png" alt="pic_proj1"><br>
-                    </a>
-                    <br>
-                    <b>Class Scheduling System (Website)</b>
-                    <p>A system for STI Alaminos used for mapping schedules</p>
-                </div>
-                <div class="proj-row">
-                    <a href="https://github.com/stevePH-gh/SteamDL-Rusted-Warfare-Beta" target="_blank">
-                        <img src="assets/images/projects/proj_steamdl.png" alt="pic_proj2"><br>
-                    </a>
-                    <br>
-                    <b>Steam DL(Windows App)</b>
-                    <p>Used for downloading mods for Rusted Warfare</p>
-                </div>
-                <div class="proj-row">
-                    <a href="https://github.com/stevePH-gh/Custronome" target="_blank">
+
+                <a href="https://github.com/stevePH-gh/STI-Alaminos-Class-Scheduling-System" target="_blank">
+                    <div class="proj-row">
+                        <img src="assets/images/projects/proj_sched.png" alt="pic_proj1"><br><br>
+                        <b class="proj-row-caption">Class Scheduling System (Website)</b>
+                        <p class="proj-row-caption">A system for STI Alaminos used for mapping schedules</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/stevePH-gh/SteamDL-Rusted-Warfare-Beta" target="_blank">
+                    <div class="proj-row">
+                        <img src="assets/images/projects/proj_steamdl.png" alt="pic_proj2"><br><br>
+                        <b class="proj-row-caption">Steam DL (Windows App)</b>
+                        <p class="proj-row-caption">Used for downloading mods for Rusted Warfare</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/stevePH-gh/Custronome" target="_blank">
+                    <div class="proj-row">
                         <img src="assets/images/projects/proj_metronome.png" alt="pic_proj3"><br>
-                    </a>
-                    <br>
-                    <b>Custronome (Mobile App)</b>
-                    <p>A metronome app that also doubles as a BPM identifier for music</p>
-                </div>
-                <div class="proj-row">
-                    <a href="https://github.com/stevePH-gh/Rusted-Mods-Website" target="_blank">
+                        <br>
+                        <b class="proj-row-caption">Custronome (Mobile App)</b>
+                        <p class="proj-row-caption">A metronome app that also doubles as a BPM identifier for music</p>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/stevePH-gh/Rusted-Mods-Website" target="_blank">
+                    <div class="proj-row">
                         <img src="assets/images/projects/proj_rustmods.png" alt="pic_proj3"><br>
-                    </a>
-                    <br>
-                    <b>RustedMods</b>
-                    <p>A WIP Rusted Warfare website for sharing your creations like mods, maps, and more, users can also download it</p>
-                </div>
+                        <br>
+                        <b class="proj-row-caption">RustedMods</b>
+                        <p class="proj-row-caption">A WIP Rusted Warfare website for sharing your creations like mods, maps, and more, users can also download it</p>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -176,19 +177,43 @@
                 <nav class="navFtr">
                     <br>
                     <a class="ftr-info-links" href="#home"><b>Home</b></a>
-                    <a class="ftr-info-links" href="https://www.linkedin.com/in/steven-tamba-web-dev/" target="_blank"><b>LinkedIn</b></a>
-                    <a class="ftr-info-links" href="#secEduc"><b>Education</b></a>
-                    <a class="ftr-info-links" href="#secAbt"><b>About</b></a>
+                    <a class="ftr-info-links" href="#secEduc" onclick="highlightEduc()"><b>Education</b></a>
+                    <a class="ftr-info-links" href="#secProj" onclick="highlightProj()"><b>Projects</b></a>
+                    <a class="ftr-info-links" href="#secAbt" onclick="highlightAbout()"><b>About</b></a>
                 </nav>
             </div>
             
             <div class="footer-site-map-etc" id="footer-contact">
                 <div id="contact">
                     <h3 style="letter-spacing: 2px; font-family: Rockwell;">Connect with me:</h3>
+                    <!--
                     <p><a href="mailto:tambapatacsilsteven@gmail.com" style="color: rgb(101, 186, 255);">tambapatacsilsteven@gmail.com</a><br></p>
-                    <p><a href="https://web.facebook.com/steven.tamba.06" style="color: rgb(101, 186, 255);" target="_blank">Facebook</a><br></p>
+                    <p><a href="https://web.facebook.com/steven.tamba.uwu/" style="color: rgb(101, 186, 255);" target="_blank">Facebook</a><br></p>
                     <p>+63 995 100 6558</p>
-                    <p></p>
+                    -->
+                    
+                    <div class="socials">
+                    <a href="sms:+639951006558">
+                    <img class="dragon-balls" src="assets/images/socials/sc_phone.svg">
+                    </a>
+
+                    <a href="mailto:stevenpatacsiltamba154@gmail.com">
+                    <img class="dragon-balls" src="assets/images/socials/sc_gmail.svg">
+                    </a>
+
+                    <a href="https://web.facebook.com/steven.tamba.uwu/" target="_blank">
+                        <img class="dragon-balls" src="assets/images/socials/sc_fb.svg">
+                    </a>
+
+                    <a href="https://github.com/stevePH-gh" target="_blank">
+                    <img class="dragon-balls" src="assets/images/socials/sc_github.svg"target="_blank">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/steven-tamba-web-dev/" target="_blank">
+                    <img class="dragon-balls" src="assets/images/socials/sc_linkedin.svg">
+                    </a>
+
+                    </div>
                 </div>
                 <!--
                 <div class="credits">
