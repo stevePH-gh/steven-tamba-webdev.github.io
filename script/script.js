@@ -43,6 +43,7 @@ function toggleDarkMode() {
   var sections = document.getElementsByClassName("title-sections")
   var projTxt = document.getElementsByClassName("proj-row-caption")
   var btn = document.getElementById("toggleButton")
+  var dragBalls = document.getElementsByClassName("dragon-balls")
 
   body.classList.toggle("body-light-mode");
   intPanel.classList.toggle("introduction-panel-light");
@@ -56,6 +57,10 @@ function toggleDarkMode() {
 
   for (p = 0; p < projTxt.length; p++) {
     projTxt[p].classList.toggle("proj-row-caption-light");
+  }
+
+    for (dballs = 0; dballs < dragBalls.length; dballs++) {
+    dragBalls[dballs].classList.toggle("dragon-balls-light");
   }
 
   // BUTTON DARK/LIGHT MODE

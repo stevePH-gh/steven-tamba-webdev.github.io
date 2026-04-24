@@ -294,7 +294,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10%;
-
+    width: 100%;
 }
 
 .ll-row {
@@ -346,6 +346,7 @@ body {
 .footer {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.674), transparent);
     padding: 10px;
+    border-radius: 10px;
 }
     .footer-light {
         background: linear-gradient(to top, rgba(0, 0, 0, 0.896), transparent);
